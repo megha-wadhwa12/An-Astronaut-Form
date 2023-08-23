@@ -1,23 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body{
-    background-image: url(https://kq-storage.s3.ap-south-1.amazonaws.com/Github/astronaut/sky-moon-bg%5B1%5D.png);
+    background-image: url("https://kq-storage.s3.ap-south-1.amazonaws.com/Github/astronaut/sky-moon-bg%5B1%5D.png");
     width:100vw;
     height:100vh;
     background-size:100% 100%;
     overflow: hidden;
-
+    font-family: "poppins", sans-serif;
 }
+
 #astronaut-1{
-             width: 500px;
-             position: absolute;
-             top: 5%;
-             left: 5%;
-             animation: floating 5s infinite;
+    width: 500px;
+    position: absolute;    
+    top: 3%;
+    left: 5%;
+    animation: floating 5s infinite;
 }
 #astronaut-2{
     width: 500px;
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 20%;
+    left: 30%;
     animation: floating 5s infinite;
 }
 
@@ -27,4 +30,45 @@ body{
     }
     50%{transform: translateY(50px);
     }
+}
+form{
+    position: absolute;
+    top: 10%;
+    bottom: 5%;
+    left:62%;
+    width: 300px;
+    padding: 0 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.block-display{
+    display: block;
+
+}
+
+label{
+    font-size: 15px;
+    margin: 10px 0 20px 0px;
+}
+
+h1{
+    font-size: 26px;
+    width: 280px;
+    text-align: center;
+    margin: 20px auto;
+}
+input[type="text"],input[type="email"],select{
+    width: 270px;
+    height: 28px;
+    border: 1px solid black;
+    padding: 0 10px;  
+}
+input[type="submit"]{
+      background-color: #e37737;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      margin: 15px auto;
+      border-radius: 15px;
 }
